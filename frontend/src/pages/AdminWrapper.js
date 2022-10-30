@@ -56,15 +56,11 @@ const AdminWrapper = () => {
           >
             <MdLogout />
             <p>Logout</p>
-          </button>
-          <p className="text-xs text-white px-8">
-            A Product for PSG College of Technology, Coimbatore.
-          </p>
+          </button> 
         </div>
       </nav>
       <div className="w-3/4 overflow-hidden">
-        {/* <Outlet /> */}
-        iguhfdi
+        <Outlet />
       </div>
     </main>
   );

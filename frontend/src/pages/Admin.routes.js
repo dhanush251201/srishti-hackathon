@@ -1,56 +1,21 @@
 import { FaUser, FaUserGraduate, FaUsers, FaUserTie, FaKey, FaHome, FaPhotoVideo } from "react-icons/fa";
-
+import {BiCalendarEvent} from "react-icons/bi"
 import { Navigate } from "react-router-dom";
 
 const list = [
   {
-    text: "About Home Page",
-    link: "/admin/about",
-    rlink: "about",
-    icon: <FaHome />,
-    // element: <About />,
-  },
-  {
-    text: "User Management",
+    text: "Add Alumni",
     link: "/admin/user-management",
     rlink: "user-management",
     icon: <FaUser />,
     // element: <UserManagement />,
   },
   {
-    text: "Club Management",
-    link: "/admin/club-management",
-    rlink: "club-management",
-    icon: <FaUsers />,
-    // element: <ClubManagement />,
-  },
-  {
-    text: "SU Team Staff",
+    text: "Add Event",
     link: "/admin/su-staff",
     rlink: "su-staff",
-    icon: < FaUserTie />,
+    icon: <BiCalendarEvent />,
     // element: <SUStaff />,
-  },
-  {
-    text: "SU Office Bearers",
-    link: "/admin/office-bearers",
-    rlink: "office-bearers",
-    icon: <FaUserGraduate />,
-    // element: <OfficeBearers />,
-  },
-  {
-    text: "NSS / NCC",
-    link: "/admin/nss-ncc",
-    rlink: "nss-ncc",
-    icon: <FaUserTie />,
-    // element: <NSS_NCC />,
-  },
-  {
-    text: "Password",
-    link: "/admin/password",
-    rlink: "password",
-    icon: <FaKey />,
-    // element: <Password />,
   },
   {
     text: "Gallery",
