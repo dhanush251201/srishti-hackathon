@@ -31,7 +31,7 @@ router.post("/register", async (req, res) => {
     res.status(200).send("User registered successfully");
   } catch (err) {
     if (err.name === "ValidationError") {
-      res.status(400).send("Enter proper data");
+      res.status(400).send(err);
     } else {
       res.status(500).send(err);
     }

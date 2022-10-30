@@ -19,13 +19,6 @@ const alumniSchema = new Schema({
     required: true,
     type: String,
   },
-  yearOfPassing: {
-    required: true,
-    type: Number,
-  },
-  currentOccupation: {
-    type: String,
-  },
   phoneNumber: {
     type: String,
     required: true,
