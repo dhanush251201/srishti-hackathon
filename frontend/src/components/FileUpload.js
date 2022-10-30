@@ -48,11 +48,11 @@ const FileUpload = ({
     <div
       className={`${className} flex flex-col items-start justify-center space-y-2 w-full overflow-x-hidden`}
     >
-      <label className="text-lime-600 text-base">{title}</label>
+      <label className="text-teal-600 text-base">{title}</label>
       <div className="flex space-x-2 items-center w-full">
         <div
           className={` px-4 py-2 w-full rounded-lg text-slate bg-gray-200 bg-clip-padding bg-no-repeat border-2 border-solid ${
-            fileError.length !== 0 ? "border-lime-400" : "border-gray-200"
+            fileError.length !== 0 ? "border-teal-400" : "border-gray-200"
           } first-letter:transition ease-in-out m-0 focus:outline-none focus:border-gray-200-400`}
         >
           <div className="w-full flex items-center space-x-6">

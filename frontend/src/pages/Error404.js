@@ -3,18 +3,18 @@ import { Link } from "react-router-dom";
 
 const Error404 = () => {
   return (
-    <div className="h-screen w-screen bg-gradient-to-bl from-lime-600 to-black flex flex-col items-center justify-center">
+    <div className="h-screen w-screen bg-gradient-to-bl from-teal-600 to-black flex flex-col items-center justify-center">
       <img
         src="https://i.ibb.co/hKwF3v0/404.png"
         alt="404 Error"
         className="h-36"
       />
-      <h1 className="text-lime-400 text-4xl font-bold uppercase">
+      <h1 className="text-teal-400 text-4xl font-bold uppercase">
         Page not found :(
       </h1>
       <h2 className="text-white mt-4">
         Wanna go to{" "}
-        <Link className="text-lime-400 hover:underline" to="/login">
+        <Link className="text-teal-400 hover:underline" to="/login">
           Login
         </Link>{" "}
         Page (uWu) ?

@@ -4,7 +4,7 @@ const Heading = ({children}) => {
   return (
     <div className="w-fit">
       <h1 className="text-4xl font-bold text-center">{children}</h1>
-      <div className="w-[80%] bg-lime-400 h-1"></div>
+      <div className="w-[80%] bg-teal-400 h-1"></div>
     </div>
   );
 }

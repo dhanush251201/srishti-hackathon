@@ -34,7 +34,7 @@ const Login = () => {
   };
 
   return (
-    <main className="w-screen h-screen bg-gradient-to-br to-black from-lime-600 flex items-center justify-center overflow-hidden">
+    <main className="w-screen h-screen bg-gradient-to-br to-black from-teal-600 flex items-center justify-center overflow-hidden">
       <div className="w-[400px] h-fit bg-white rounded-lg p-8 shadow-lg">
         <Heading>Login</Heading>
         <TextInput
