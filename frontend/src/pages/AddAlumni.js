@@ -26,7 +26,7 @@ const AddUsers = () => {
   return (
     <section className="px-8 py-8 w-full">
       <Heading>Add Alumni</Heading>
-      <div className="mt-8 w-full lg:pr-[20%] h-[calc(100vh-20rem)] overflow-auto space-y-2">
+      <div className="mt-8 w-full lg:pr-[20%] h-[calc(100vh-20rem)] overflow-auto">
         <div className="flex items-center w-full space-x-4">
           <Inputfield
             valueState={[name, setName]}
@@ -39,7 +39,7 @@ const AddUsers = () => {
             placeholder="Enter phone number"
           />
         </div>
-        <div className="flex items-center w-full space-x-4">
+        <div className="flex items-center w-full space-x-4 mt-4">
           <Inputfield
             valueState={[email, setEmail]}
             title="Email"
@@ -49,6 +49,18 @@ const AddUsers = () => {
             valueState={[dob, setDob]}
             title="Date of birth"
             placeholder="Enter Date of Birth"
+          />
+        </div>
+        <div className="flex items-center w-full space-x-4 mt-4">
+          <Inputfield
+            valueState={[college, setCollege]}
+            title="College"
+            placeholder="Enter college"
+          />
+          <Inputfield
+            valueState={[lkdn, setLkdn]}
+            title="Linkedin URL"
+            placeholder="Enter URL"
           />
         </div>
 
@@ -66,8 +78,6 @@ const AddUsers = () => {
             placeholder="Re-Enter your password here"
           />
         </div>
-        <div className="flex items-center w-full space-x-4 mt-4"></div>
-
         <div className="flex items-center space-x-4 mt-8 w-1/2">
           <Button className="w-3/4" text="Add User" />
         </div>

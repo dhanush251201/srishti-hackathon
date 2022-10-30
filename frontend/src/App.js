@@ -14,7 +14,7 @@ const App = () => {
         <Routes>
           <Route path="admin" element={<AdminWrapper />}>
             <Route path="add-alumni" element={<AddAlumni />} />
-            <Route path="add-alumni" element={<AddEvent />} />
+            <Route path="events" element={<AddEvent />} />
             <Route path="*" element={<Error404 />} />
           </Route>
           <Route path="/login" element={<Login />} />

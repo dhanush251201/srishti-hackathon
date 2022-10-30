@@ -35,7 +35,7 @@ const Dropdown = ({
             setError("");
           }}
           className={`px-4 py-2 w-full rounded-lg text-slate bg-gray-200 bg-clip-padding bg-no-repeat border-2 border-solid ${
-            error.length !== 0 ? "border-teal-400" : "border-gray-200"
+            error.length !== 0 ? "border-lime-400" : "border-gray-200"
           } first-letter:transition ease-in-out m-0 focus:outline-none focus:border-gray-200-400`}
         >
           {placeholder.length > 0 && (

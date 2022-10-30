@@ -22,7 +22,7 @@ const Inputfield = ({
     <div
       className={`${className} flex flex-col items-start justify-center space-y-2`}
     >
-      <label className="text-teal-600 text-base">{title}</label>
+      <label className="text-lime-600 text-base">{title}</label>
       <div className="flex space-x-2 items-center w-full">
         <input
           disabled={isDisabled}
@@ -35,7 +35,7 @@ const Inputfield = ({
             setError("");
           }}
           className={` px-4 py-2 w-full rounded-lg text-slate bg-gray-200 bg-clip-padding bg-no-repeat border-2 border-solid ${
-            error.length !== 0 ? "border-teal-400" : "border-gray-200"
+            error.length !== 0 ? "border-lime-400" : "border-gray-200"
           } first-letter:transition ease-in-out m-0 focus:outline-none focus:border-gray-200-400`}
         />
         {type === "password" && (
