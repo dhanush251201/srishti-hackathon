@@ -2,10 +2,10 @@ import { Router } from "express";
 import Auth from "../models/Auth.js";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
-
+import { isLoggedIn } from "../middleware/users.js";
 const router = Router();
 
-export const SECRET = "sucms.psgtech";
+export const SECRET = "SECRETKEY";
 
 router.get("/", async (req, res) => {
     try {
@@ -19,7 +19,7 @@ router.get("/", async (req, res) => {
 
 router.post("/register", async (req, res) => {
   try {
-    const { email, password, type } = req.body;
+    const { email, password, type} = req.body;
     const hashedPassword = await bcrypt.hash(password, 10);
     const auth = new Auth({
       email,
@@ -48,6 +48,7 @@ router.post("/login", async (req, res) => {
         res.status(200).json({
           token: jwt.sign({ _id: auth._id }, SECRET),
           type: auth.type,
+          expiresIn: "3d",
         });
       } else {
         res.status(401).json({ error: "Invalid credentials" });
@@ -61,4 +62,8 @@ router.post("/login", async (req, res) => {
   }
 });
 
+router.get("/secret-route",isLoggedIn,async(req,res)=>{
+  res.status(200).send("You are logged in");
+
+})
 export default router;
