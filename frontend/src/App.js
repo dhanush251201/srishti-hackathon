@@ -1,10 +1,11 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import "./styles/tailwind.output.css";
-import Toaster from "react-hot-toast";
+import {Toaster} from "react-hot-toast";
 import Login from "./pages/Login";
 import Error404 from "./pages/Error404";
 import AdminWrapper from "./pages/AdminWrapper";
 import AddAlumni from "./pages/AddAlumni"
+
 const App = () => {
   return (
     <div className="absolute top-0 left-0 ">

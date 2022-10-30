@@ -52,20 +52,6 @@ const AddUsers = () => {
           />
         </div>
 
-        {/* <Dropdown
-        //     valueState={[rights, setrights]}
-        //     title="Rights"
-        //     placeholder="Select a Privilege"
-        //     options={["Student", "Faculty Advisor", "Dean"]}
-        //   />
-        //   <Dropdown
-        //     valueState={[cname, setcname]}
-        //     title="Club Name"
-        //     placeholder="Select a club"
-        //     options={["Student", "Faculty Advisor", "Dean"]}
-        //     className="w-full"
-        //   /> */}
-
         <div className="flex items-center w-full space-x-4 mt-4">
           <Inputfield
             type="Password"

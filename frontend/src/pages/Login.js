@@ -13,7 +13,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    const postBody = { userId: username, password: password };
+    const postBody = { email: username, password: password };
     axios
       .post("http://localhost:5000/api/auth/login", postBody, {})
       .then((res) => {
@@ -21,7 +21,7 @@ const Login = () => {
         localStorage.setItem("token", res.data.token);
         localStorage.setItem("type", res.data.type);
         toast.success("Login Successful !");
-        res.data.rights === "admin" ? navigate("/admin") : navigate("/club");
+        navigate("/admin/add-alumni");
       })
       .catch((err) => {
         console.log(err);
@@ -40,8 +40,8 @@ const Login = () => {
         <TextInput
           className="mt-8"
           valueState={[username, setUsername]}
-          placeholder="Enter Username"
-          title="Username"
+          placeholder="Enter email"
+          title="Email"
         />
         <TextInput
           className="mt-4"
